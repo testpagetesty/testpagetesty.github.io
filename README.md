@@ -77,4 +77,4 @@ Para más información, contacta con nosotros:
 
 ## Licencia
 
-© 2024 SocialCasino. Todos los derechos reservados. 
+© 2025 SocialCasino. Todos los derechos reservados. 
