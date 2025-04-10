@@ -63,10 +63,39 @@ body {
     color: var(--secondary-color);
 }
 
-/* Hero Section */
+/* Hero Sections */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    padding-top: 60px;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Game Guide Hero */
 .game-guide-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('../images/poker-bg.jpg') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -75,6 +104,28 @@ body {
     text-align: center;
     padding: 2rem;
     margin-top: 4rem;
+}
+
+/* Game-specific hero backgrounds */
+.poker .game-guide-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                      url('../images/poker-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.blackjack .game-guide-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                      url('../images/blackjack-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.ruleta .game-guide-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                      url('../images/ruleta-bg.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .game-guide-hero h1 {
@@ -86,6 +137,162 @@ body {
 .game-guide-hero p {
     font-size: 1.2rem;
     max-width: 600px;
+}
+
+/* Services Section */
+.services {
+    padding: 4rem 2rem;
+    background-color: var(--primary-color);
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.service-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Contact Page */
+.contact-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    padding-top: 60px;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-info {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.contact-info h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.contact-info-item {
+    margin-bottom: 1.5rem;
+}
+
+.contact-info-item h4 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.contact-form {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.submit-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+}
+
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    background-color: var(--primary-color);
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Content Sections */
@@ -125,6 +332,23 @@ h3 {
 .rule-item ol,
 .rule-item ul {
     padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.rule-item ul ul,
+.rule-item ul ol,
+.rule-item ol ul,
+.rule-item ol ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.rule-item li {
+    margin-bottom: 0.5rem;
+}
+
+.rule-item strong {
+    color: var(--secondary-color);
 }
 
 /* Strategy Section */
@@ -139,6 +363,19 @@ h3 {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.strategy-item ul {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.strategy-item li {
+    margin-bottom: 0.5rem;
+}
+
+.strategy-item p {
+    margin-bottom: 1rem;
 }
 
 /* Tips Section */
@@ -226,18 +463,53 @@ h3 {
         display: none;
     }
     
+    .hero h1,
     .game-guide-hero h1 {
         font-size: 2rem;
+    }
+    
+    .game-guide-hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
     }
     
     section {
         padding: 2rem 1rem;
     }
     
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-image {
+        order: -1;
+    }
+    
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
     .rules-content,
     .strategy-content,
     .tips-content {
         grid-template-columns: 1fr;
+    }
+
+    .rule-item,
+    .strategy-item,
+    .tip-item {
+        padding: 1.5rem;
     }
 }
 
@@ -257,4 +529,293 @@ h3 {
 .strategy-item,
 .tip-item {
     animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Popular Games Section */
+.popular-games {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.popular-games h2 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.game-card {
+    background-color: var(--accent-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.game-card h3 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.game-card p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.game-card .learn-more {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.game-card .learn-more:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .popular-games {
+        padding: 2rem 1rem;
+    }
+
+    .popular-games h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .games-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .game-card {
+        padding: 1.5rem;
+    }
+
+    .game-card h3 {
+        font-size: 1.75rem;
+    }
+}
+
+/* About Hero Section */
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/about-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    padding-top: 60px;
+}
+
+/* Mission and Values Section */
+.mission-values {
+    padding: 6rem 2rem;
+    background-color: var(--primary-color);
+}
+
+.mission-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.mission-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mission-image .feature-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.mission-image:hover .feature-image {
+    transform: scale(1.05);
+}
+
+.mission-content h2 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.value-card {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.value-card h3 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.value-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team-section {
+    padding: 6rem 2rem;
+    background-color: var(--accent-color);
+}
+
+.team-section h2 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.team-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.team-card {
+    background-color: var(--primary-color);
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-card h3 {
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.team-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Join Us Section */
+.join-us {
+    padding: 6rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/join-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.join-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.join-us h2 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.join-us p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.join-us .cta-button {
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 1024px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .mission-content h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-card {
+        padding: 2rem;
+    }
+
+    .join-us {
+        padding: 4rem 1rem;
+    }
+
+    .join-us h2 {
+        font-size: 2rem;
+    }
 } 
