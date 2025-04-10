@@ -14,7 +14,12 @@
             <div class="logo">
                 <a href="./">SocialCasino</a>
             </div>
-            <ul class="nav-menu">
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="./">Inicio</a></li>
                 <li><a href="services/">Servicios</a></li>
                 <li><a href="about/">Nosotros</a></li>
@@ -122,5 +127,75 @@
             <p>&copy; 2024 SocialCasino. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Cookie Popup -->
+    <div class="cookie-popup" id="cookiePopup">
+        <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. ¿Aceptas nuestras cookies?</p>
+        <div class="cookie-buttons">
+            <button class="reject-cookies" onclick="rejectCookies()">Rechazar</button>
+            <button class="accept-cookies" onclick="acceptCookies()">Aceptar</button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Cookie functions
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function acceptCookies() {
+            setCookie('cookieConsent', 'accepted', 365);
+            document.getElementById('cookiePopup').style.display = 'none';
+        }
+
+        function rejectCookies() {
+            setCookie('cookieConsent', 'rejected', 365);
+            document.getElementById('cookiePopup').style.display = 'none';
+        }
+
+        // Check if user has already made a choice
+        window.onload = function() {
+            const consent = getCookie('cookieConsent');
+            if (!consent) {
+                setTimeout(function() {
+                    document.getElementById('cookiePopup').classList.add('show');
+                }, 2000);
+            }
+        }
+    </script>
 </body>
 </html> 

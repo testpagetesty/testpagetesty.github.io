@@ -12,85 +12,85 @@
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <a href="/">SocialCasino</a>
+                <a href="../index.html">SocialCasino</a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/services/">Servicios</a></li>
-                <li><a href="/about/">Nosotros</a></li>
-                <li><a href="/contact/">Contacto</a></li>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../services/index.html">Servicios</a></li>
+                <li><a href="../about/index.html">Nosotros</a></li>
+                <li><a href="index.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="contact-hero">
+    <section class="contact-hero">
+        <div class="hero-content">
             <h1>Contacto</h1>
-            <p>Estamos aquí para ayudarte</p>
-        </section>
+            <p>Estamos aquí para ayudarte con cualquier consulta</p>
+        </div>
+    </section>
 
-        <section class="contact-section">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Información de Contacto</h2>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <h3>Dirección</h3>
-                            <p>Calle Gran Vía, 123<br>
-                            28013 Madrid<br>
-                            España</p>
-                        </div>
-                        <div class="contact-item">
-                            <h3>Teléfono</h3>
-                            <p>+34 123 456 789</p>
-                        </div>
-                        <div class="contact-item">
-                            <h3>Email</h3>
-                            <p>info@socialcasino.es</p>
-                        </div>
-                        <div class="contact-item">
-                            <h3>Horario</h3>
-                            <p>Lunes - Viernes: 9:00 - 18:00<br>
-                            Sábado - Domingo: Cerrado</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <h2>Envíanos un Mensaje</h2>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Asunto</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Enviar Mensaje</button>
-                    </form>
-                </div>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Información de Contacto</h3>
+            <div class="contact-info-item">
+                <h4>Dirección</h4>
+                <p>Calle Gran Vía, 123</p>
+                <p>28013 Madrid, España</p>
             </div>
-        </section>
-
-        <section class="map-section">
-            <h2>Nuestra Ubicación</h2>
+            <div class="contact-info-item">
+                <h4>Teléfono</h4>
+                <p>+34 123 456 789</p>
+            </div>
+            <div class="contact-info-item">
+                <h4>Email</h4>
+                <p>info@socialcasino.com</p>
+            </div>
+            <div class="contact-info-item">
+                <h4>Horario de Atención</h4>
+                <p>Lunes a Viernes: 9:00 - 18:00</p>
+                <p>Sábado: 10:00 - 14:00</p>
+            </div>
             <div class="map-container">
-                <!-- Aquí iría el código del mapa de Google Maps -->
-                <div class="map-placeholder">
-                    <p>Mapa de ubicación</p>
-                </div>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5458357812466!2d-3.7051391234374946!3d40.42027307936401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287ae2251513%3A0x25dd9b51d38d3c49!2sCalle%20Gran%20V%C3%ADa%2C%20123%2C%2028013%20Madrid%2C%20Spain!5e0!3m2!1sen!2ses!4v1709913427159!5m2!1sen!2ses"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="contact-form">
+            <h3>Envíanos un Mensaje</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-content">
@@ -101,15 +101,16 @@
             <div class="footer-section">
                 <h3>Enlaces Rápidos</h3>
                 <ul>
-                    <li><a href="/privacy/">Privacidad</a></li>
-                    <li><a href="/terms/">Términos y Condiciones</a></li>
-                    <li><a href="/contact/">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../services/index.html">Servicios</a></li>
+                    <li><a href="../about/index.html">Nosotros</a></li>
+                    <li><a href="index.html">Contacto</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h3>Contacto</h3>
-                <p>Email: info@socialcasino.es</p>
-                <p>Tel: +34 123 456 789</p>
+                <p>Email: info@socialcasino.com</p>
+                <p>Teléfono: +34 123 456 789</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -123,6 +124,23 @@
             // Aquí iría el código para enviar el formulario
             alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
             this.reset();
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
         });
     </script>
 </body>
