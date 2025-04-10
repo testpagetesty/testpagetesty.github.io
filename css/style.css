@@ -818,4 +818,458 @@ h3 {
     .join-us h2 {
         font-size: 2rem;
     }
+}
+
+/* About Intro Section */
+.about-intro {
+    padding: 6rem 2rem;
+    background-color: var(--primary-color);
+}
+
+.intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-card {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Expertise Section */
+.expertise-section {
+    padding: 6rem 2rem;
+    background-color: var(--accent-color);
+}
+
+.expertise-grid {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.expertise-card {
+    background-color: var(--primary-color);
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+}
+
+.expertise-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.expertise-card ul {
+    list-style: none;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.expertise-card li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.expertise-card li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+/* Team Section Updates */
+.team-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.team-specialties {
+    list-style: none;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.team-specialties li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.team-specialties li::before {
+    content: "•";
+    position: absolute;
+    left: 0.5rem;
+    color: var(--secondary-color);
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/stats-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cta-button.primary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.cta-button.secondary:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Responsive Design Updates */
+@media (max-width: 1024px) {
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Services Hero Section */
+.services-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/services-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    padding-top: 60px;
+}
+
+/* Section Container */
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+/* Game Guides Section */
+.game-guides {
+    background-color: var(--primary-color);
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.game-card {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.game-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.game-features {
+    list-style: none;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.game-features li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.game-features li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+/* News Updates Section */
+.news-updates {
+    background-color: var(--accent-color);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.news-card {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.news-features {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.news-features li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.news-features li::before {
+    content: "•";
+    position: absolute;
+    left: 0.5rem;
+    color: var(--secondary-color);
+}
+
+/* Community Support Section */
+.community-support {
+    background-color: var(--primary-color);
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.support-card {
+    background-color: var(--accent-color);
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-5px);
+}
+
+.support-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Responsive Design for Services Page */
+@media (max-width: 1024px) {
+    .games-grid,
+    .support-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        padding: 2rem 1rem;
+    }
+
+    .games-grid,
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-card,
+    .news-card,
+    .support-card {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-section {
+        padding: 4rem 1rem;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
 } 
