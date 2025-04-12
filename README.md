@@ -1,39 +1,39 @@
-# SocialCasino - Sitio Web Informativo
+# SocialCasino - Informational Website
 
-Este es un sitio web informativo sobre casinos modernos, desarrollado en español. El sitio proporciona información educativa y de entretenimiento sobre el mundo del casino, sin ofrecer servicios de juego real.
+This is an informational website about modern casinos, developed in Canadian English. The site provides educational and entertainment information about the casino world, without offering real gambling services.
 
-## Estructura del Sitio
+## Site Structure
 
-El sitio web consta de las siguientes páginas:
+The website consists of the following pages:
 
-- `/index.html` - Página principal
-- `/services/` - Servicios ofrecidos
-- `/about/` - Información sobre la empresa
-- `/contact/` - Formulario de contacto
-- `/privacy/` - Política de privacidad
-- `/terms/` - Términos y condiciones
+- `/index.html` - Main page
+- `/services/` - Services offered
+- `/about/` - Company information
+- `/contact/` - Contact form
+- `/privacy/` - Privacy policy
+- `/terms/` - Terms and conditions
 
-## Características
+## Features
 
-- Diseño moderno y responsive
-- Navegación intuitiva
-- Formulario de contacto funcional
-- Información detallada sobre casinos
-- Contenido educativo y de entretenimiento
+- Modern and responsive design
+- Intuitive navigation
+- Functional contact form
+- Detailed information about casinos
+- Educational and entertainment content
 
-## Tecnologías Utilizadas
+## Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript (para funcionalidades básicas)
+- JavaScript (for basic functionality)
 - Google Fonts (Roboto)
 
-## Instalación
+## Installation
 
-1. Clona este repositorio
-2. Abre el archivo `index.html` en tu navegador
+1. Clone this repository
+2. Open the `index.html` file in your browser
 
-## Estructura de Archivos
+## File Structure
 
 ```
 SocialCasino/
@@ -62,19 +62,19 @@ SocialCasino/
     └── index.html
 ```
 
-## Notas Importantes
+## Important Notes
 
-- Este es un sitio web puramente informativo
-- No se ofrecen servicios de juego real
-- El contenido está destinado a fines educativos
-- Se requiere conexión a internet para cargar las fuentes de Google
+- This is a purely informational website
+- No real gambling services are offered
+- Content is intended for educational purposes
+- Internet connection is required to load Google Fonts
 
-## Contacto
+## Contact
 
-Para más información, contacta con nosotros:
-- Email: info@socialcasino.es
-- Teléfono: +34 123 456 789
+For more information, contact us:
+- Email: info@socialcasino.ca
+- Phone: +1 (416) 123-4567
 
-## Licencia
+## License
 
-© 2025 SocialCasino. Todos los derechos reservados. 
+© 2025 SocialCasino. All rights reserved. 
