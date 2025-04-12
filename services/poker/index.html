@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker Guide - SocialCasino</title>
+    <meta name="description" content="Learn about poker rules, strategies, and tips at SocialCasino">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Common Text Formatting Styles */
+        .text-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            color: #fff;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .text-container h2 {
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
+            text-transform: none;
+            letter-spacing: 0.5px;
+        }
+
+        .text-container h3 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .text-container p {
+            margin-bottom: 1rem;
+        }
+
+        .text-container ul, 
+        .text-container ol {
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .text-container li {
+            margin: 0.5rem 0;
+        }
+
+        .text-container strong {
+            color: var(--secondary-color);
+        }
+
+        /* Guide Content Grid Styles */
+        .guide-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .guide-section {
+            background: rgba(40, 40, 40, 0.95);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .guide-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .guide-section h3 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .guide-section p {
+            color: #fff;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .guide-section ul,
+        .guide-section ol {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+
+        .guide-section li {
+            color: #fff;
+            margin: 0.8rem 0;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .guide-content {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .guide-section {
+                padding: 1.5rem;
+            }
+        }
+
+        .hero {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 2rem;
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/logo.jpeg');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero p {
+            font-size: clamp(1.2rem, 2vw, 1.4rem);
+            font-weight: 300;
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: clamp(0.8rem, 2vw, 1.2rem) clamp(1.5rem, 3vw, 2.5rem);
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            text-decoration: none;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 1rem;
+            }
+        }
+
+        .game-guide-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/services-bg.svg') no-repeat center center/cover;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: 0 20px;
+        }
+
+        .game-guide-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+            z-index: 1;
+        }
+
+        .game-guide-hero .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .game-guide-hero .logo-container {
+            margin-bottom: 2rem;
+        }
+
+        .game-guide-hero .logo-container img {
+            width: 150px;
+            height: auto;
+        }
+
+        .game-guide-hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #D4AF37;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-guide-hero p {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .play-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            color: #000;
+            background: #D4AF37;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .play-button:hover {
+            background: #c9a227;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .game-guide-hero {
+                min-height: 50vh;
+            }
+
+            .game-guide-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .game-guide-hero p {
+                font-size: 1.2rem;
+            }
+
+            .game-guide-hero .logo-container img {
+                width: 120px;
+            }
+
+            .play-button {
+                padding: 0.8rem 2rem;
+                font-size: 1rem;
+            }
+        }
+
+        /* Стили для гамбургер-меню */
+        #hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1000;
+        }
+
+        #hamburger .line {
+            width: 30px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 6px 0;
+            transition: 0.4s;
+            border-radius: 3px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #hamburger {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+
+            .nav-menu {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background: var(--primary-color);
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            .nav-menu.active {
+                display: block;
+            }
+
+            .nav-menu li {
+                margin: 15px 0;
+            }
+
+            .nav-menu a {
+                font-size: 1.2rem;
+            }
+
+            /* Анимация для гамбургера */
+            #hamburger.active .line:nth-child(1) {
+                transform: rotate(-45deg) translate(-7px, 6px);
+            }
+
+            #hamburger.active .line:nth-child(2) {
+                opacity: 0;
+            }
+
+            #hamburger.active .line:nth-child(3) {
+                transform: rotate(45deg) translate(-7px, -6px);
+            }
+        }
+
+        .contact-cta {
+            padding: 4rem 0;
+            background: linear-gradient(45deg, #1a472a, #2d5a40);
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .contact-cta h2 {
+            color: var(--primary-color) !important;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-cta p {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            color: #fff;
+            background: var(--primary-color);
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .contact-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+            background: #e5c144;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+
+        .modal.active {
+            display: block;
+        }
+
+        .game-frame {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95%;
+            max-width: 1200px;
+            height: 90vh;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            background: #fff;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: #D4AF37;
+            font-size: 32px;
+            cursor: pointer;
+            z-index: 1001;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .close-button:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="poker">
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/">SocialCasino</a>
+            </div>
+            <button id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/about/">About Us</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Poker Guide</h1>
+                <p>Master the art of poker with our comprehensive guide</p>
+                <button class="cta-button" onclick="openGameModal()">Play Now</button>
+            </div>
+        </section>
+
+        <section class="game-rules">
+            <div class="text-container">
+                <h2>Basic Rules</h2>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h3>Objective of the Game</h3>
+                        <p>The objective of poker is to win the pot (bet) by forming the best five-card hand or making other players fold.</p>
+                    </div>
+                    <div class="guide-section">
+                        <h3>Hand Rankings</h3>
+                        <ol>
+                            <li>Royal Flush</li>
+                            <li>Straight Flush</li>
+                            <li>Four of a Kind</li>
+                            <li>Full House</li>
+                            <li>Flush</li>
+                            <li>Straight</li>
+                            <li>Three of a Kind</li>
+                            <li>Two Pair</li>
+                            <li>One Pair</li>
+                            <li>High Card</li>
+                        </ol>
+                    </div>
+                    <div class="guide-section">
+                        <h3>Game Structure</h3>
+                        <ul>
+                            <li>Pre-flop: Initial card distribution</li>
+                            <li>Flop: First three community cards</li>
+                            <li>Turn: Fourth community card</li>
+                            <li>River: Fifth and final community card</li>
+                            <li>Showdown: Revealing cards</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-strategy">
+            <div class="text-container">
+                <h2>Basic Strategies</h2>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h3>Position at the Table</h3>
+                        <ul>
+                            <li>Early Position: More caution</li>
+                            <li>Middle Position: Greater flexibility</li>
+                            <li>Late Position: More aggression</li>
+                            <li>Button: Most advantageous position</li>
+                        </ul>
+                    </div>
+                    <div class="guide-section">
+                        <h3>Hand Selection</h3>
+                        <ul>
+                            <li>Premium: AA, KK, QQ, AK</li>
+                            <li>Strong: JJ, TT, AQ, AJ</li>
+                            <li>Speculative: Low pairs, suited connectors</li>
+                            <li>Marginal: Avoid in early position</li>
+                        </ul>
+                    </div>
+                    <div class="guide-section">
+                        <h3>Basic Concepts</h3>
+                        <ul>
+                            <li>Pot Odds: Ratio of bet to pot</li>
+                            <li>Implied Odds: Potential gains</li>
+                            <li>Equity: Probability of winning</li>
+                            <li>Range: Possible hand combinations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-tips">
+            <div class="text-container">
+                <h2>Advanced Tips</h2>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h3>Bankroll Management</h3>
+                        <ul>
+                            <li>Do not play more than 5% of bankroll</li>
+                            <li>Maintain detailed records</li>
+                            <li>Establish stop-loss</li>
+                            <li>Gradually increase limits</li>
+                        </ul>
+                    </div>
+                    <div class="guide-section">
+                        <h3>Reading Opponents</h3>
+                        <ul>
+                            <li>Observe betting patterns</li>
+                            <li>Identify common tells</li>
+                            <li>Analyze decision timing</li>
+                            <li>Keep notes on players</li>
+                        </ul>
+                    </div>
+                    <div class="guide-section">
+                        <h3>Mental Control</h3>
+                        <ul>
+                            <li>Avoid tilt</li>
+                            <li>Maintain concentration</li>
+                            <li>Accept variance</li>
+                            <li>Play within comfortable limits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="best-practices">
+            <div class="text-container">
+                <h2>Best Practices</h2>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h3>Position at the Table</h3>
+                        <ul>
+                            <li>Early Position: More caution</li>
+                            <li>Middle Position: Greater flexibility</li>
+                            <li>Late Position: More aggression</li>
+                            <li>Button: Most advantageous position</li>
+                        </ul>
+                    </div>
+                    <div class="guide-section">
+                        <h3>Hand Selection</h3>
+                        <ul>
+                            <li>Premium: AA, KK, QQ, AK</li>
+                            <li>Strong: JJ, TT, AQ, AJ</li>
+                            <li>Speculative: Low pairs, suited connectors</li>
+                            <li>Marginal: Avoid in early position</li>
+                        </ul>
+                    </div>
+                    <div class="guide-section">
+                        <h3>Basic Concepts</h3>
+                        <ul>
+                            <li>Pot Odds: Ratio of bet to pot</li>
+                            <li>Implied Odds: Potential gains</li>
+                            <li>Equity: Probability of winning</li>
+                            <li>Range: Possible hand combinations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div class="text-container">
+                <h2>Ready to Become a Poker Pro?</h2>
+                <p>Get personalized guidance from our expert team and take your poker game to the next level!</p>
+                <a href="/contact/" class="contact-button">Start Your Poker Journey Today →</a>
+            </div>
+        </section>
+
+        <!-- Game Modal -->
+        <div class="modal" id="gameModal">
+            <button class="close-button" onclick="closeGameModal()">×</button>
+            <iframe src="../../games/poker-test/index.html" class="game-frame" id="gameFrame"></iframe>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SocialCasino</h3>
+                <p>Your reliable guide in the modern casino world</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../../privacy/">Privacy</a></li>
+                    <li><a href="../../terms/">Terms and Conditions</a></li>
+                    <li><a href="../../contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>290 Bremner Blvd<br>Toronto, ON M5V 3L9<br>Canada</p>
+                <p>Email: support@socialcasino-ca.com</p>
+                <p>Phone: +1 (647) 555-8901</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SocialCasino. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Game state
+        let gameState = {
+            players: [],
+            currentPlayer: 0,
+            pot: 0,
+            deck: [],
+            communityCards: [],
+            currentBet: 0,
+            gamePhase: 'preflop', // preflop, flop, turn, river
+            smallBlind: 10,
+            bigBlind: 20
+        };
+
+        // Card suits and values
+        const suits = ['♠', '♥', '♦', '♣'];
+        const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+
+        // Initialize the game
+        function initGame() {
+            createDeck();
+            shuffleDeck();
+            dealInitialCards();
+            updateGameDisplay();
+        }
+
+        // Create a new deck
+        function createDeck() {
+            gameState.deck = [];
+            for (let suit of suits) {
+                for (let value of values) {
+                    gameState.deck.push({ suit, value });
+                }
+            }
+        }
+
+        // Shuffle the deck using Fisher-Yates algorithm
+        function shuffleDeck() {
+            for (let i = gameState.deck.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [gameState.deck[i], gameState.deck[j]] = [gameState.deck[j], gameState.deck[i]];
+            }
+        }
+
+        // Deal initial cards to players
+        function dealInitialCards() {
+            gameState.players = [
+                { name: 'Player', chips: 1000, hand: [], bet: 0, folded: false },
+                { name: 'CPU 1', chips: 1000, hand: [], bet: 0, folded: false },
+                { name: 'CPU 2', chips: 1000, hand: [], bet: 0, folded: false },
+                { name: 'CPU 3', chips: 1000, hand: [], bet: 0, folded: false }
+            ];
+
+            // Deal two cards to each player
+            for (let i = 0; i < 2; i++) {
+                for (let player of gameState.players) {
+                    player.hand.push(gameState.deck.pop());
+                }
+            }
+        }
+
+        // Update the game display
+        function updateGameDisplay() {
+            // Update player information
+            document.getElementById('playerChips').textContent = `Chips: ${gameState.players[0].chips}`;
+            document.getElementById('potAmount').textContent = `Pot: ${gameState.pot}`;
+            
+            // Update player's hand
+            const playerHandElement = document.getElementById('playerHand');
+            playerHandElement.innerHTML = '';
+            gameState.players[0].hand.forEach(card => {
+                const cardElement = document.createElement('div');
+                cardElement.className = 'card';
+                cardElement.textContent = `${card.value}${card.suit}`;
+                playerHandElement.appendChild(cardElement);
+            });
+
+            // Update community cards
+            const communityCardsElement = document.getElementById('communityCards');
+            communityCardsElement.innerHTML = '';
+            gameState.communityCards.forEach(card => {
+                const cardElement = document.createElement('div');
+                cardElement.className = 'card';
+                cardElement.textContent = `${card.value}${card.suit}`;
+                communityCardsElement.appendChild(cardElement);
+            });
+        }
+
+        // Player actions
+        function playerFold() {
+            gameState.players[0].folded = true;
+            nextPlayer();
+        }
+
+        function playerCall() {
+            const player = gameState.players[0];
+            const callAmount = gameState.currentBet - player.bet;
+            if (callAmount <= player.chips) {
+                player.chips -= callAmount;
+                player.bet = gameState.currentBet;
+                gameState.pot += callAmount;
+                nextPlayer();
+            }
+        }
+
+        function playerRaise(amount) {
+            const player = gameState.players[0];
+            const totalBet = player.bet + amount;
+            if (totalBet <= player.chips) {
+                player.chips -= amount;
+                player.bet = totalBet;
+                gameState.currentBet = totalBet;
+                gameState.pot += amount;
+                nextPlayer();
+            }
+        }
+
+        // CPU player logic
+        function cpuPlay(player) {
+            if (player.folded) return;
+
+            // Simple AI logic based on hand strength
+            const handStrength = evaluateHand(player.hand, gameState.communityCards);
+            const randomFactor = Math.random();
+
+            if (handStrength > 0.7) {
+                // Strong hand - raise
+                const raiseAmount = Math.min(
+                    Math.floor(player.chips * 0.3),
+                    gameState.currentBet * 2
+                );
+                playerRaise(raiseAmount);
+            } else if (handStrength > 0.4 || randomFactor > 0.7) {
+                // Medium hand or random call
+                playerCall();
+            } else if (randomFactor > 0.3) {
+                // Weak hand with some chance to fold
+                playerFold();
+            } else {
+                // Fold weak hand
+                playerFold();
+            }
+        }
+
+        // Evaluate hand strength (simplified version)
+        function evaluateHand(hand, communityCards) {
+            const allCards = [...hand, ...communityCards];
+            // Basic hand evaluation logic
+            // This is a simplified version - a real implementation would be more complex
+            return Math.random() * 0.5 + 0.3; // Placeholder
+        }
+
+        // Move to next player
+        function nextPlayer() {
+            gameState.currentPlayer = (gameState.currentPlayer + 1) % gameState.players.length;
+            
+            if (gameState.currentPlayer === 0) {
+                // All players have acted, move to next phase
+                nextPhase();
+            } else {
+                // CPU player's turn
+                if (gameState.currentPlayer !== 0) {
+                    setTimeout(() => {
+                        cpuPlay(gameState.players[gameState.currentPlayer]);
+                        updateGameDisplay();
+                    }, 1000);
+                }
+            }
+        }
+
+        // Move to next game phase
+        function nextPhase() {
+            switch (gameState.gamePhase) {
+                case 'preflop':
+                    gameState.gamePhase = 'flop';
+                    dealCommunityCards(3);
+                    break;
+                case 'flop':
+                    gameState.gamePhase = 'turn';
+                    dealCommunityCards(1);
+                    break;
+                case 'turn':
+                    gameState.gamePhase = 'river';
+                    dealCommunityCards(1);
+                    break;
+                case 'river':
+                    determineWinner();
+                    break;
+            }
+            gameState.currentBet = 0;
+            gameState.players.forEach(player => player.bet = 0);
+            updateGameDisplay();
+        }
+
+        // Deal community cards
+        function dealCommunityCards(count) {
+            for (let i = 0; i < count; i++) {
+                gameState.communityCards.push(gameState.deck.pop());
+            }
+        }
+
+        // Determine the winner
+        function determineWinner() {
+            // This would be a complex function in a real implementation
+            // For now, we'll just show a simple message
+            alert('Game Over! Winner will be determined here.');
+            initGame(); // Start a new game
+        }
+
+        // Initialize the game when the page loads
+        window.onload = initGame;
+
+        // Function to open the game modal
+        function openGameModal() {
+            const modal = document.getElementById('gameModal');
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        }
+
+        // Function to close the game modal
+        function closeGameModal() {
+            const modal = document.getElementById('gameModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = ''; // Restore scrolling
+            // Reload iframe to reset game state
+            document.getElementById('gameFrame').src = document.getElementById('gameFrame').src;
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('gameModal');
+            if (event.target === modal) {
+                closeGameModal();
+            }
+        }
+
+        // Close modal when pressing Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeGameModal();
+            }
+        });
+
+        // Добавляем функционал для гамбургер-меню
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Закрываем меню при клике на ссылку
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 
