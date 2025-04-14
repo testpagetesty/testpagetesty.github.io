@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .primary { fill: #2563eb; }
+        .secondary { fill: #1e40af; }
+        .light { fill: #f3f4f6; }
+    </style>
+    
+    <!-- Facebook -->
+    <g transform="translate(50, 50)">
+        <circle class="primary" cx="0" cy="0" r="25"/>
+        <text class="light" x="0" y="8" text-anchor="middle" font-size="24" font-weight="bold">f</text>
+    </g>
+    
+    <!-- Twitter -->
+    <g transform="translate(150, 50)">
+        <circle class="primary" cx="0" cy="0" r="25"/>
+        <path class="light" d="M-15 -5 L15 -5 L5 15 L-5 15 Z" stroke-width="2"/>
+    </g>
+    
+    <!-- Instagram -->
+    <g transform="translate(250, 50)">
+        <circle class="primary" cx="0" cy="0" r="25"/>
+        <circle class="light" cx="0" cy="0" r="10"/>
+        <circle class="light" cx="8" cy="-8" r="3"/>
+    </g>
+    
+    <!-- LinkedIn -->
+    <g transform="translate(350, 50)">
+        <circle class="primary" cx="0" cy="0" r="25"/>
+        <rect class="light" x="-15" y="-10" width="30" height="20" rx="2"/>
+        <path class="light" d="M-5 -5 L5 -5 L5 5 L-5 5 Z" stroke-width="2"/>
+    </g>
+</svg> 

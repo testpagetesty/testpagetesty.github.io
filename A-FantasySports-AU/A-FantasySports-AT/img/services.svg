@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .primary { fill: #2563eb; }
+        .secondary { fill: #1e40af; }
+        .accent { fill: #3b82f6; }
+        .light { fill: #f3f4f6; }
+        .dark { fill: #1f2937; }
+    </style>
+    
+    <!-- Monitoring Service -->
+    <g transform="translate(100, 100)">
+        <rect class="primary" x="-40" y="-40" width="80" height="80" rx="10"/>
+        <circle class="light" cx="0" cy="0" r="25"/>
+        <path class="dark" d="M0 -15 L0 15 M-15 0 L15 0" stroke-width="3"/>
+        <text class="dark" x="0" y="70" text-anchor="middle" font-size="14">Monitoring</text>
+    </g>
+    
+    <!-- Analysis Service -->
+    <g transform="translate(300, 100)">
+        <rect class="secondary" x="-40" y="-40" width="80" height="80" rx="10"/>
+        <path class="light" d="M-25 -25 L25 25 M25 -25 L-25 25" stroke-width="3"/>
+        <circle class="light" cx="0" cy="0" r="20"/>
+        <text class="dark" x="0" y="70" text-anchor="middle" font-size="14">Analyse</text>
+    </g>
+    
+    <!-- Strategy Service -->
+    <g transform="translate(500, 100)">
+        <rect class="accent" x="-40" y="-40" width="80" height="80" rx="10"/>
+        <path class="light" d="M-30 -20 L30 -20 L0 20 Z" stroke-width="3"/>
+        <text class="dark" x="0" y="70" text-anchor="middle" font-size="14">Strategie</text>
+    </g>
+    
+    <!-- Training Service -->
+    <g transform="translate(700, 100)">
+        <rect class="primary" x="-40" y="-40" width="80" height="80" rx="10"/>
+        <path class="light" d="M-20 -20 L20 -20 L20 20 L-20 20 Z" stroke-width="3"/>
+        <path class="light" d="M-10 -10 L10 -10 L10 10 L-10 10 Z" stroke-width="3"/>
+        <text class="dark" x="0" y="70" text-anchor="middle" font-size="14">Training</text>
+    </g>
+    
+    <!-- Support Service -->
+    <g transform="translate(900, 100)">
+        <rect class="secondary" x="-40" y="-40" width="80" height="80" rx="10"/>
+        <path class="light" d="M-20 -20 L20 -20 L20 20 L-20 20 Z" stroke-width="3"/>
+        <path class="light" d="M-10 0 L10 0 M0 -10 L0 10" stroke-width="3"/>
+        <text class="dark" x="0" y="70" text-anchor="middle" font-size="14">Support</text>
+    </g>
+</svg> 

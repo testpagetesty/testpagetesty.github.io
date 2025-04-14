@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Odkryj świat fantasy sports - poradniki, strategie, analizy i najnowsze informacje ze świata wirtualnych rozgrywek sportowych." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>FantasySports - Twój Przewodnik po Świecie Fantasy Sports</title>
+        <!-- Временно убираем favicon -->
+        <!-- <link rel="icon" href="img/favicon.ico" /> -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="fantasy-sports.css" />
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="preloader-content">
+                <div class="preloader-spinner"></div>
+                <div class="preloader-text">FantasySports</div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-container">
+                <a href="#hero" class="logo">
+                    <span class="logo-text">AussieFantasySports</span>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#dyscypliny" class="nav-link">Sports</a></li>
+                        <li class="nav-item"><a href="#strategie" class="nav-link">Strategies</a></li>
+                        <li class="nav-item"><a href="#poradniki" class="nav-link">Guides</a></li>
+                        <li class="nav-item"><a href="#latest-news" class="nav-link">News</a></li>
+                        <li class="nav-item"><a href="#kontakt" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Become an Aussie Fantasy Sports Champion</h1>
+                    <p class="hero-description">
+                        G'day sports fans! Dive into the world of sports analysis and strategy.
+                        Build your dream team, compete with fellow sports lovers,
+                        and win with your knowledge and gut instinct.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-outline" data-toggle="modal" data-target="#heroModal">Give it a Go</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-container">
+                        <img src="img/hero.jpeg" alt="Fantasy Sports" class="main-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Modal -->
+        <div class="modal fade" id="heroModal" tabindex="-1" role="dialog" aria-labelledby="heroModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="heroModalLabel">Welcome to Aussie Fantasy Sports</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="hero-modal-content">
+                            <div class="hero-modal-text">
+                                <h4>What's Fantasy Sports All About?</h4>
+                                <p>It's a ripper way to get into sports, mate! You become the coach of your own dream team with real players. Your success comes down to your sports knowledge, analysis skills, and strategic thinking.</p>
+                                
+                                <h4>What's In It For You?</h4>
+                                <ul>
+                                    <li><strong>Weekly Comps</strong> - join tournaments and win fantastic prizes</li>
+                                    <li><strong>Season-Long Leagues</strong> - compete through the whole footy season</li>
+                                    <li><strong>Special Events</strong> - unique contests during major sporting events</li>
+                                    <li><strong>Mate Rates</strong> - invite your mates and earn bonus points</li>
+                                </ul>
+
+                                <h4>Top Tips for Success</h4>
+                                <ul>
+                                    <li>Keep an eye on player stats and form</li>
+                                    <li>Smart player trades at the right time</li>
+                                    <li>Check the fixture and plan ahead</li>
+                                    <li>Watch for injuries and team changes</li>
+                                    <li>Use our analysis tools</li>
+                                </ul>
+
+                                <h4>Ready to Have a Crack?</h4>
+                                <p>Join our community of sports fans, learn the tricks of the trade, and turn your sports knowledge into success!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back to Home</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <section id="statistics" class="statistics-section">
+            <div class="container">
+                <div class="statistics-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number" data-count="50000">0</div>
+                        <div class="stat-label">Aussie Players</div>
+                        <div class="stat-description">Join our growing community of true-blue fantasy sports fans</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-number" data-count="8">0</div>
+                        <div class="stat-label">Major Sports</div>
+                        <div class="stat-description">From AFL to cricket, we've got all your favourite sports</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-number" data-count="200">0</div>
+                        <div class="stat-label">Weekly Comps</div>
+                        <div class="stat-description">Regular tournaments with bonza prizes up for grabs</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="stat-number" data-count="500000">0</div>
+                        <div class="stat-label">Prize Pool</div>
+                        <div class="stat-description">Total AUD in seasonal rewards for our champions</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Fantasy Sports Section -->
+        <section id="o-fantasy" class="fantasy-sports-section">
+            <div class="fantasy-sports-content">
+                <div class="section-heading text-center">
+                    <h2>About Fantasy Sports</h2>
+                    <p class="section-subtitle">Your guide to the exciting world of Aussie fantasy sports</p>
+                </div>
+                
+                <div class="fantasy-sports-grid">
+                    <div class="fantasy-sports-main">
+                        <div class="fantasy-sports-image">
+                            <img src="img/sport2.jpg" alt="Fantasy Sports Australia" class="img-fluid">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="fantasy-sports-text">
+                            <h3>What's Fantasy Sport All About?</h3>
+                            <p>Fantasy Sports brings a fresh twist to following your favourite Aussie games. As team manager, you'll pick real players from the AFL, NRL, BBL and more to build your dream team. Your success rides on your sports knowledge and smart choices based on real match results.</p>
+                        </div>
+                    </div>
+
+                    <div class="fantasy-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h4>Live Stats</h4>
+                            <p>Get real-time updates and stats from all major Aussie sports competitions.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h4>Daily Updates</h4>
+                            <p>Stay on top of team changes, injuries, and form with daily insights.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Local Leagues</h4>
+                            <p>Join fantasy leagues with your mates or compete nationally.</p>
+                        </div>
+                    </div>
+
+                    <div class="fantasy-steps">
+                        <h3>Ready to Have a Crack?</h3>
+                        <div class="steps-grid">
+                            <div class="step-card">
+                                <div class="step-number">1</div>
+                                <h4>Pick Your Sport</h4>
+                                <p>Choose from AFL, NRL, Cricket or A-League</p>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-number">2</div>
+                                <h4>Sign Up</h4>
+                                <p>Quick and easy registration process</p>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-number">3</div>
+                                <h4>Build Your Team</h4>
+                                <p>Select your favourite players within the salary cap</p>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-number">4</div>
+                                <h4>Join the Action</h4>
+                                <p>Compete in leagues and win prizes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News Section -->
+        <section id="latest-news" class="latest-news-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading text-center">
+                            <h2>Latest News</h2>
+                            <p>Stay updated with the latest happenings in Aussie fantasy sports</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sport-categories">
+                    <button class="sport-category active">All</button>
+                    <button class="sport-category">AFL</button>
+                    <button class="sport-category">NRL</button>
+                    <button class="sport-category">Cricket</button>
+                </div>
+
+                <div class="news-grid">
+                    <!-- Featured News -->
+                    <article class="featured-news">
+                        <div class="featured-content">
+                            <div class="news-meta">
+                                <span class="badge">AFL</span>
+                                <span class="date"><i class="far fa-calendar"></i> 15 April 2025</span>
+                            </div>
+                            <h3 class="card-title">2025 AFL Fantasy Season Kicks Off</h3>
+                            <p class="card-text">The new AFL Fantasy season is here with some ripper changes! New scoring system, expanded player stats, and special bonuses for new players. Get your team ready before the first bounce!</p>
+                            <a href="#" class="btn-link" data-toggle="modal" data-target="#newsModal1">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Regular News Cards -->
+                    <article class="news-card">
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="badge">NRL</span>
+                                <span class="date"><i class="far fa-calendar"></i> 12 April 2025</span>
+                            </div>
+                            <h4 class="card-title">NRL Fantasy: Top Players to Watch</h4>
+                            <p class="card-text">Our experts break down the top performers and rising stars in the NRL. Find out who's in form and who could be your fantasy team's secret weapon this season.</p>
+                            <a href="#" class="btn-link" data-toggle="modal" data-target="#newsModal2">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="badge">Cricket</span>
+                                <span class="date"><i class="far fa-calendar"></i> 10 April 2025</span>
+                            </div>
+                            <h4 class="card-title">BBL Fantasy: Season Review</h4>
+                            <p class="card-text">A look back at the Big Bash League season and what it means for your fantasy cricket team. Key stats, standout performances, and lessons for next season.</p>
+                            <a href="#" class="btn-link" data-toggle="modal" data-target="#newsModal3">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="badge">A-League</span>
+                                <span class="date"><i class="far fa-calendar"></i> 8 April 2025</span>
+                            </div>
+                            <h4 class="card-title">A-League Fantasy: Transfer Window</h4>
+                            <p class="card-text">The latest on player movements and what it means for your fantasy football team. Who's in, who's out, and who could be a game-changer.</p>
+                            <a href="#" class="btn-link" data-toggle="modal" data-target="#newsModal4">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="badge">Updates</span>
+                                <span class="date"><i class="far fa-calendar"></i> 5 April 2025</span>
+                            </div>
+                            <h4 class="card-title">New Fantasy Sports Features</h4>
+                            <p class="card-text">We've added some beaut new features to make your fantasy sports experience even better. Check out the new stats tools, improved interface, and mobile app updates.</p>
+                            <a href="#" class="btn-link" data-toggle="modal" data-target="#newsModal5">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-body">
+                            <div class="news-meta">
+                                <span class="badge">Tournaments</span>
+                                <span class="date"><i class="far fa-calendar"></i> 3 April 2025</span>
+                            </div>
+                            <h4 class="card-title">Aussie Fantasy Sports Cup</h4>
+                            <p class="card-text">Join our special tournament with a massive prize pool. New competition format, expert commentary, and live match updates. Don't miss out on the action!</p>
+                            <a href="#" class="btn-link" data-toggle="modal" data-target="#newsModal6">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disciplines Section -->
+        <section id="dyscypliny" class="disciplines-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading text-center">
+                            <h2>Our Sports</h2>
+                            <p>Choose your favourite Aussie sport and start your fantasy journey</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="disciplines-grid">
+                    <!-- AFL Fantasy -->
+                    <div class="discipline-card">
+                        <div class="discipline-header">
+                            <div class="discipline-icon">
+                                <i class="fas fa-football-ball"></i>
+                            </div>
+                            <h4>AFL Fantasy</h4>
+                            <span class="badge">Most Popular</span>
+                        </div>
+                        <div class="discipline-content">
+                            <p class="card-text">The heart of Australian sports. Build your dream team with the best AFL players and compete in the most popular fantasy competition in Australia.</p>
+                            <div class="discipline-stats">
+                                <div class="stat-item">
+                                    <span>Disposals</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>Goals</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>Tackles</span>
+                                </div>
+                            </div>
+                            <div class="discipline-leagues">
+                                <h6>Featured Leagues:</h6>
+                                <ul>
+                                    <li>AFL Fantasy Classic</li>
+                                    <li>SuperCoach</li>
+                                    <li>Ultimate Footy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NRL Fantasy -->
+                    <div class="discipline-card">
+                        <div class="discipline-header">
+                            <div class="discipline-icon">
+                                <i class="fas fa-rugby-ball"></i>
+                            </div>
+                            <h4>NRL Fantasy</h4>
+                            <span class="badge">Fast-Paced</span>
+                        </div>
+                        <div class="discipline-content">
+                            <p class="card-text">Experience the thrill of rugby league fantasy. Select your team from the NRL's best players and compete in weekly head-to-head matches.</p>
+                            <div class="discipline-stats">
+                                <div class="stat-item">
+                                    <span>Tries</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>Tackles</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>Metres</span>
+                                </div>
+                            </div>
+                            <div class="discipline-leagues">
+                                <h6>Featured Leagues:</h6>
+                                <ul>
+                                    <li>NRL Fantasy</li>
+                                    <li>SuperCoach NRL</li>
+                                    <li>Ultimate League</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cricket Fantasy -->
+                    <div class="discipline-card">
+                        <div class="discipline-header">
+                            <div class="discipline-icon">
+                                <i class="fas fa-cricket"></i>
+                            </div>
+                            <h4>Cricket Fantasy</h4>
+                            <span class="badge">All Formats</span>
+                        </div>
+                        <div class="discipline-content">
+                            <p class="card-text">From Test matches to the Big Bash League. Create your cricket dream team and compete in Australia's favourite summer sport.</p>
+                            <div class="discipline-stats">
+                                <div class="stat-item">
+                                    <span>Runs</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>Wickets</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>Catches</span>
+                                </div>
+                            </div>
+                            <div class="discipline-leagues">
+                                <h6>Featured Leagues:</h6>
+                                <ul>
+                                    <li>BBL Fantasy</li>
+                                    <li>Sheffield Shield</li>
+                                    <li>One-Day Cup</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- A-League Fantasy -->
+                    <div class="discipline-card">
+                        <div class="discipline-header">
+                            <div class="discipline-icon">
+                                <i class="fas fa-futbol"></i>
+                            </div>
+                            <h4>A-League Fantasy</h4>
+                            <span class="badge">Growing Fast</span>
+                        </div>
+                        <div class="discipline-content">
+                            <p class="card-text">Join the growing community of A-League fantasy managers. Build your team and compete in Australia's premier football competition.</p>
+                            <div class="discipline-stats">
+                                <div class="stat-item">
+                                    <span>Goals</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>Assists</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>Clean Sheets</span>
+                                </div>
+                            </div>
+                            <div class="discipline-leagues">
+                                <h6>Featured Leagues:</h6>
+                                <ul>
+                                    <li>A-League Fantasy</li>
+                                    <li>SuperCoach A-League</li>
+                                    <li>Ultimate League</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Netball Fantasy -->
+                    <div class="discipline-card">
+                        <div class="discipline-header">
+                            <div class="discipline-icon">
+                                <i class="fas fa-basketball-ball"></i>
+                            </div>
+                            <h4>Netball Fantasy</h4>
+                            <span class="badge">New</span>
+                        </div>
+                        <div class="discipline-content">
+                            <p class="card-text">Experience the excitement of Suncorp Super Netball fantasy. Create your team and compete in Australia's premier netball competition.</p>
+                            <div class="discipline-stats">
+                                <div class="stat-item">
+                                    <span>Goals</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>Intercepts</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>Assists</span>
+                                </div>
+                            </div>
+                            <div class="discipline-leagues">
+                                <h6>Featured Leagues:</h6>
+                                <ul>
+                                    <li>Super Netball Fantasy</li>
+                                    <li>SuperCoach Netball</li>
+                                    <li>Ultimate League</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategies Section -->
+        <section id="strategie" class="strategy-section">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h2>Game Plans</h2>
+                    <p>Learn the tricks of the trade to become a top fantasy sports manager</p>
+                </div>
+                
+                <div class="strategy-grid">
+                    <!-- Basic Strategies -->
+                    <div class="strategy-card">
+                        <div class="strategy-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Player Analysis</h3>
+                        <div class="strategy-content">
+                            <ul class="strategy-list">
+                                <li><i class="fas fa-check"></i>Check player form and stats</li>
+                                <li><i class="fas fa-check"></i>Watch for injuries and suspensions</li>
+                                <li><i class="fas fa-check"></i>Track fixture difficulty</li>
+                                <li><i class="fas fa-check"></i>Monitor weather conditions</li>
+                            </ul>
+                            <div class="strategy-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>Keep an eye on the footy shows and expert analysis for insider tips</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Budget Management -->
+                    <div class="strategy-card">
+                        <div class="strategy-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <h3>Salary Cap Strategy</h3>
+                        <div class="strategy-content">
+                            <ul class="strategy-list">
+                                <li><i class="fas fa-check"></i>Balance star players and value picks</li>
+                                <li><i class="fas fa-check"></i>Plan for price rises and falls</li>
+                                <li><i class="fas fa-check"></i>Save cash for emergencies</li>
+                                <li><i class="fas fa-check"></i>Use the byes to your advantage</li>
+                            </ul>
+                            <div class="strategy-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>Don't blow your budget early - save some cash for the business end of the season</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seasonal Tactics -->
+                    <div class="strategy-card">
+                        <div class="strategy-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Season Planning</h3>
+                        <div class="strategy-content">
+                            <ul class="strategy-list">
+                                <li><i class="fas fa-check"></i>Plan for the byes and finals</li>
+                                <li><i class="fas fa-check"></i>Watch for rule changes</li>
+                                <li><i class="fas fa-check"></i>Manage your trades wisely</li>
+                                <li><i class="fas fa-check"></i>Prepare for special rounds</li>
+                            </ul>
+                            <div class="strategy-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>Have a crack at different strategies - what works in AFL might not work in NRL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Tips -->
+                <div class="strategy-tips-section">
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>League Management</h4>
+                            <p>Join a league with your mates or compete in public leagues for bragging rights</p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h4>Weekly Comps</h4>
+                            <p>Enter our special weekly competitions with ripper prizes up for grabs</p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Expert Tips</h4>
+                            <p>Follow our expert analysis and get the inside word on player selections</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h2>Testimonials from Our Players</h2>
+                    <p>Find out what Fantasy Sports participants say about us</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Fantasy Sports has completely changed my approach to watching sports events. Now I'm not just a spectator, but a true strategist!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Alexander K.</h4>
+                                    <span>Football Analyst</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"An excellent platform for those who want to test their sports knowledge. I particularly like the scoring system and variety of tournaments."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Maria S.</h4>
+                                    <span>Sports Journalist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"As a basketball coach, I use Fantasy Sports for player analysis. It's a great tool for understanding statistics and trends."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Dmitry P.</h4>
+                                    <span>Basketball Coach</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The modern interface and convenient mobile version allow me to follow my teams anytime. I recommend it to all sports enthusiasts!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Elena M.</h4>
+                                    <span>Sports Blogger</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guides Section -->
+        <section id="poradniki" class="guide-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Game Guide</h2>
+                    <p>Learn the basics and advanced strategies for successful Fantasy Sports gameplay</p>
+                </div>
+                
+                <div class="guide-grid">
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Fantasy Sports Basics</h3>
+                        <div class="guide-content">
+                            <ul class="guide-list">
+                                <li><i class="fas fa-check"></i> Choosing a sports discipline</li>
+                                <li><i class="fas fa-check"></i> Creating your team</li>
+                                <li><i class="fas fa-check"></i> Budget and transfers</li>
+                                <li><i class="fas fa-check"></i> Points scoring system</li>
+                            </ul>
+                            <div class="guide-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>Start by learning the rules of your chosen discipline and the specifics of points scoring</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Statistics Analysis</h3>
+                        <div class="guide-content">
+                            <ul class="guide-list">
+                                <li><i class="fas fa-check"></i> Studying player form</li>
+                                <li><i class="fas fa-check"></i> Analysing opponents</li>
+                                <li><i class="fas fa-check"></i> Using statistics</li>
+                                <li><i class="fas fa-check"></i> Predicting results</li>
+                            </ul>
+                            <div class="guide-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>Regularly track player statistics and use them to make decisions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Tournament Strategies</h3>
+                        <div class="guide-content">
+                            <ul class="guide-list">
+                                <li><i class="fas fa-check"></i> Tournament preparation</li>
+                                <li><i class="fas fa-check"></i> Team management</li>
+                                <li><i class="fas fa-check"></i> Tactics for different stages</li>
+                                <li><i class="fas fa-check"></i> Adapting to changes</li>
+                            </ul>
+                            <div class="guide-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>Develop a flexible strategy that allows you to adapt to tournament changes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontakt" class="contact-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch with our team for any questions or support</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your name" required>
+                                <label class="form-label">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your email" required>
+                                <label class="form-label">Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Your message" required></textarea>
+                                <label class="form-label">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-information">
+                        <h4>Contact Information</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Level 7/180 Flinders Street, Melbourne VIC 3000, Australia</li>
+                            <li><i class="fas fa-phone"></i> +61 2 9876 5432</li>
+                            <li><i class="fas fa-envelope"></i> support@fantasysports.au</li>
+                        </ul>
+                        <div class="map-container" style="margin-top: 20px;">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096037!2d144.96800235!3d-37.81732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b8c21cb649%3A0xe39848c48906f8d3!2sLevel%207%2F180%20Flinders%20St%2C%20Melbourne%20VIC%203000!5e0!3m2!1sen!2sau!4v1645567890123!5m2!1sen!2sau" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0; border-radius: 10px;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Area -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-grid">
+                        <div class="footer-info">
+                            <div class="footer-logo">
+                                <span class="logo-text">FantasySports</span>
+                            </div>
+                            <p class="footer-description">
+                                Your reliable partner in the world of fantasy sports. We provide up-to-date information, 
+                                analytics, and tools for successful gameplay.
+                            </p>
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="footer-links">
+                            <h4>Quick Links</h4>
+                            <ul class="footer-nav">
+                                <li><a href="#hero">Home</a></li>
+                                <li><a href="#o-fantasy">About Fantasy Sports</a></li>
+                                <li><a href="#dyscypliny">Sports</a></li>
+                                <li><a href="#strategie">Strategies</a></li>
+                                <li><a href="#poradniki">Guides</a></li>
+                                <li><a href="#latest-news">News</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-contact">
+                            <h4>Contact Us</h4>
+                            <ul class="contact-info">
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Level 7/180 Flinders Street<br>
+                                    Melbourne VIC 3000<br>
+                                    Australia
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    +61 2 9876 5432
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    support@fantasysports.au
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-newsletter">
+                            <h4>Newsletter</h4>
+                            <p>Stay updated with the latest news and updates</p>
+                            <form class="newsletter-form">
+                                <input type="email" placeholder="Your email" required>
+                                <button type="submit" class="btn-subscribe">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="footer-policies">
+                            <ul class="policy-links">
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="terms-of-use.html">Terms of Use</a></li>
+                                <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright">
+                            <p>&copy; 2025 FantasySports. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- News Modals -->
+        <!-- Modal 1 - Featured News -->
+        <div class="modal fade" id="newsModal1" tabindex="-1" role="dialog" aria-labelledby="newsModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="newsModal1Label">Start of the New Fantasy Sports Season 2025/26</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="news-modal-content">
+                            <div class="news-modal-text">
+                                <p>We're excited to announce the start of the new Fantasy Sports season 2025/26! This season brings:</p>
+                                <ul>
+                                    <li>New tournaments and leagues</li>
+                                    <li>Improved scoring system</li>
+                                    <li>Expanded statistical data</li>
+                                    <li>Special bonuses for new participants</li>
+                                </ul>
+                                <p>Join us and become part of the largest Fantasy Sports community!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 - Transfer News -->
+        <div class="modal fade" id="newsModal2" tabindex="-1" role="dialog" aria-labelledby="newsModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="newsModal2Label">Transfer Window: Top 10 Players for Your Team</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="news-modal-content">
+                            <div class="news-modal-text">
+                                <p>During the current transfer window, we've seen some ripper moves:</p>
+                                <ul>
+                                    <li>Major transfers in top clubs</li>
+                                    <li>Surprises on the last day of the transfer window</li>
+                                    <li>Analysis of the impact of transfers on Fantasy leagues</li>
+                                    <li>Recommendations for team composition</li>
+                                </ul>
+                                <p>Stay updated and don't miss important changes in team compositions!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 - NHL Playoffs -->
+        <div class="modal fade" id="newsModal3" tabindex="-1" role="dialog" aria-labelledby="newsModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="newsModal3Label">NHL Playoffs: Strategy for Fantasy Hockey Success</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="news-modal-content">
+                            <div class="news-modal-text">
+                                <p>The decisive stage of the NHL season has started - the playoffs. In our article:</p>
+                                <ul>
+                                    <li>Analysis of the first round pairs</li>
+                                    <li>Key players of the teams</li>
+                                    <li>Statistics and trends</li>
+                                    <li>Recommendations for Fantasy leagues</li>
+                                </ul>
+                                <p>Don't miss important matches and stay updated!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4 - NBA Season Results -->
+        <div class="modal fade" id="newsModal4" tabindex="-1" role="dialog" aria-labelledby="newsModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="newsModal4Label">NBA Fantasy: Regular Season Results</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="news-modal-content">
+                            <div class="news-modal-text">
+                                <p>Experts share their success secrets in NBA Fantasy:</p>
+                                <ul>
+                                    <li>Team composition strategies</li>
+                                    <li>Analysis of player statistics</li>
+                                    <li>Transfer timing</li>
+                                    <li>Working with the budget</li>
+                                </ul>
+                                <p>Use these tips to achieve success in your league!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5 - Platform Updates -->
+        <div class="modal fade" id="newsModal5" tabindex="-1" role="dialog" aria-labelledby="newsModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="newsModal5Label">New Fantasy Sports Platform Features</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="news-modal-content">
+                            <div class="news-modal-text">
+                                <p>We're excited to introduce new features to our platform:</p>
+                                <ul>
+                                    <li>Improved interface</li>
+                                    <li>Expanded statistics</li>
+                                    <li>New tournament types</li>
+                                    <li>Achievement system</li>
+                                </ul>
+                                <p>Enjoy all the new features and share your opinion!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 6 - Spring Tournament -->
+        <div class="modal fade" id="newsModal6" tabindex="-1" role="dialog" aria-labelledby="newsModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="newsModal6Label">Spring Fantasy Sports Tournament with Prize Pool</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="news-modal-content">
+                            <div class="news-modal-text">
+                                <p>We invite you to participate in the Spring Fantasy Sports Tournament:</p>
+                                <ul>
+                                    <li>Special prizes for winners</li>
+                                    <li>Unique tournament rules</li>
+                                    <li>Expert commentary</li>
+                                    <li>Direct match broadcasts</li>
+                                </ul>
+                                <p>Register and show your skills!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Owl Carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/active.js"></script>
+        <!-- Cookie Banner -->
+        <script src="js/cookiebanner.js"></script>
+        <script>
+            // Number animation function
+            function animateNumbers() {
+                const statNumbers = document.querySelectorAll('.stat-number');
+                
+                statNumbers.forEach(statNumber => {
+                    const target = parseInt(statNumber.getAttribute('data-count'));
+                    const duration = 2000; // 2 seconds
+                    const startTime = performance.now();
+                    const startValue = 0;
+                    
+                    function updateNumber(currentTime) {
+                        const elapsedTime = currentTime - startTime;
+                        
+                        if (elapsedTime > duration) {
+                            statNumber.textContent = target.toLocaleString();
+                            return;
+                        }
+                        
+                        const progress = elapsedTime / duration;
+                        const currentValue = Math.floor(progress * target);
+                        statNumber.textContent = currentValue.toLocaleString();
+                        
+                        requestAnimationFrame(updateNumber);
+                    }
+                    
+                    requestAnimationFrame(updateNumber);
+                });
+            }
+
+            // Intersection Observer to trigger animation when section is visible
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateNumbers();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+
+            // Observe the statistics section
+            const statisticsSection = document.querySelector('.statistics-section');
+            observer.observe(statisticsSection);
+        </script>
+    </body>
+</html> 
